@@ -62,5 +62,5 @@ function convertArray($arr)
 //save to output.txt
 $newArr = convertArray($arr);
 
-$output = "<?php \n return ".var_export($newArr, true);
+$output = "<?php\n" . "return " . var_export($newArr, true) . ";";
 file_put_contents('output.txt', $output);
